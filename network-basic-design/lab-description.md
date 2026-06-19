@@ -26,5 +26,3 @@ The goal of this lab is to simulate a small campus network and practice both Lay
 
 ## Notes
 This lab helped me understand how multiple networking concepts work together in a real-world scenario rather than individually.
-Future improvement:
-* Add dynamic routing (OSPF)
