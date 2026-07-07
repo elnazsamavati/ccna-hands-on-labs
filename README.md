@@ -9,8 +9,9 @@ I update this repository weekly with new labs and improvements.
 
 ## Labs
 * Week 1:
-  * Basic campus network design
-  * Topics: VLAN, STP, EtherChannel, Inter-VLAN Routing, Trunk, Static Routing, ROAS, DHCP
+  * VLAN-Router-on-a-Stick-Lab
+  * Topics: VLAN, Router-on-a-Stick, IEEE 802.1Q Trunking, EtherChannel (LACP), Rapid Spanning Tree Protocol, SSH Remote Management, DHCP, PortFast, BPDU Guard
+  * Tools: Cisco Packet Tracer
 
 *(More labs will be added over time, covering broader CCNA topics and more complex scenarios.)*
 
@@ -22,4 +23,4 @@ The goal is to move from individual concepts to full network design scenarios th
 * EVE-NG
 
 ## Notes
-Each lab includes configurations and a short explanation of what was implemented and learned.
+Each lab includes configurations and a short explanation of what was implemented.
