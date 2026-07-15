@@ -1,0 +1,92 @@
+=================================================
+R1-Shiraz Configuration
+=================================================
+
+Hostname
+-------------------------------------------------
+hostname R1-Shiraz
+
+
+=================================================
+Security
+=================================================
+username admin secret 123
+enable secret 123
+
+line console 0
+ login local
+ exit
+
+line vty 0 15
+ login local
+ transport input ssh
+ exit
+
+ip domain-name farkiantech.local
+crypto key generate rsa modulus 2048
+ip ssh version 2
+service password-encryption
+
+
+=================================================
+Interface Gig0/0 (Trunk to Switch)
+=================================================
+interface gig 0/0
+ no shutdown
+ exit
+
+
+=================================================
+Sub‑Interfaces (Router‑on‑a‑stick)
+=================================================
+interface gig 0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.254 255.255.255.0
+ exit
+
+interface gig 0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.254 255.255.255.0
+ exit
+
+interface gig 0/0.30
+ encapsulation dot1Q 30
+ ip address 192.168.30.254 255.255.255.0
+ exit
+
+
+=================================================
+DHCP Pools
+=================================================
+ip dhcp pool vlan10
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.254
+ dns-server 8.8.8.8
+ exit
+
+ip dhcp pool vlan20
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.20.254
+ dns-server 8.8.8.8
+ exit
+
+
+=================================================
+WAN Interface
+=================================================
+interface gig 0/1
+ no shutdown
+ ip address 10.10.10.1 255.255.255.252
+ exit
+
+
+=================================================
+Static Route to Tehran Site
+=================================================
+ip route 172.16.0.0 255.255.0.0 10.10.10.2
+
+
+=================================================
+Save Configuration
+=================================================
+do write memory
