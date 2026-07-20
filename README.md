@@ -16,6 +16,7 @@ I update this repository weekly with new labs, gradually covering the complete C
 |------|-----|--------|------|
 | 01 | VLAN-Router-on-a-Stick-Lab | VLAN, Router-on-a-Stick, IEEE 802.1Q Trunking, EtherChannel (LACP), Rapid Spanning Tree Protocol, SSH, DHCP, PortFast, BPDU Guard | Cisco Packet Tracer |
 | 02 | Multi-Site-VLAN-Routing-Lab | Multi-Site Network, VLAN, Router-on-a-Stick, IEEE 802.1Q Trunking, EtherChannel (LACP), Rapid Spanning Tree Protocol, SSH, DHCP, Static Routing, PortFast, BPDU Guard | Cisco Packet Tracer |
+| 03 | Multi-Site-VTP-Static-Routing | Multi-Site Network, VLAN, VTP Version 2 (Server / Client), Router-on-a-Stick, IEEE 802.1Q Trunking, EtherChannel (LACP), Rapid Spanning Tree Protocol, SSH, DHCP, Static Routing, Route Summarization, PortFast, BPDU Guard | Cisco Packet Tracer |
 
 *(More labs will be added over time, covering broader CCNA topics and more complex enterprise scenarios.)*
 
